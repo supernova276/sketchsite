@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- font for awesome icons -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <title>test</title>
+</head>
+<body style="padding:0px; margin:0px;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+   <div class="nav-heading">
+       <div class="header">
+           Fine Art Gallrey
+       </div>
+<!-- nav bar -->
+    <nav>
+         <div class="icon">FA</div> 
+        <!-- <img class="icon" src="img/fav.png"> -->
+        <div class="container" id="clickit">
+        <i class="fa fa-times" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="#signup" style="color:#fff;" >SIGNUP</a></li>
+                <li><a href="#login" style="color:#fff;">LOGIN</a></li>
+               <li><a href="#contact" style="color:#fff;">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="openMenu()"></i>
+    </nav>
+    </div>
+
+<!-- grid  -->
+   <div class="container-1">
+        <div class="item-1"></div>
+        <div class=" item-2">
+                <div class="cont">
+                    <div class="cont1">
+                    THE ART GALLREY OF YOUR DREAMS
+            </div>
+
+            <div class="cont2">
+                <form>
+                    <input type="text" placeholder="search your favourite art form">
+                   <button> <i class="fa fa-search" style="display:block; color:#fff;background-color:#000;
+                    height:30px;width:50px;box-sizing:border-box;font-size:20px;padding:2px;"></i>
+                    </button>
+                </form>
+
+            </div>
+            <div class="cont3">
+               " ART WASHES AWAY FROM THE SOUL THE DUST OF EVERY DAY LIFE "
+            </div>
+            <div class="cont4">
+              - pablo picaso
+            </div>
+        </div>
+        </div>
+        <div class="item-3">
+        <!-- <img  src="img/img11.jpg"> -->
+        </div>
+        <div class="item-4">
+        <!-- <img  src="img/img10.jpg"> -->
+        </div>
+        <div class="item-5">
+        <!-- <img  src="img/img13.jpg"> -->
+        </div>
+        <div class="item-6">
+        <!-- <img class="item-6"src="img/img12.jpg"> -->
+        </div>
+</div>
+    
+   
+    </body>
+    <script>
+        clickEl=document.getElementById("clickit");
+        function closeMenu(){
+            clickEl.style.right="-15rem";
+        }
+        function openMenu(){
+            clickEl.style.right="0rem";
+        }
+    </script>
+</html>
